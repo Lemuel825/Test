@@ -97,30 +97,12 @@ public static void main(String[] args) {
         String chckID = ID;
         String chckPassword = Pass;
 
-        for (Accounts acc : ListAccount) { 		
-
-            System.out.println(acc.getId());
-            if(String.valueOf(acc.getId()).equals(chckID) && acc.getPassword().equals(chckPassword)){
-               
+        for (int i = 0; i < ListAccount.size(); i++) {
+            if(String.valueOf(ListAccount.get(i).Id).equals(chckID) && ListAccount.get(i).Password.equals(chckPassword)){
 
             }
-            else{
-               
-            }
-       }
-
-        // for (int i = 0; i < ListAccount.size(); i++) {
-
-        //     System.out.println(" "+ ListAccount.get(i).Id);
-        //     if(String.valueOf(ListAccount.get(i).Id).equals(chckID)){
-        //         System.out.println("Login Successfully!");
-
-        //     }
-        //     else{
-        //         System.out.println("Invalid User ID or Password!");
-        //     }
             
-        // }
+        }
 
 
     }
