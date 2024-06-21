@@ -33,8 +33,6 @@ public class Main {
                     break;
             }
         }
-      
-https://github.com/marcoyimyaem/prjb2y2024/tree/main
 
 
 
