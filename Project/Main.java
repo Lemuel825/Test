@@ -2,6 +2,7 @@ package Project;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+import jdk.jshell.spi.ExecutionControl;
 
 public class Main {
     static Employee employee;
@@ -40,22 +41,23 @@ public class Main {
     public static void DisplayLogin(){
         Scanner in = new Scanner(System.in);
 
-        System.out.println("============ Register ============");
-        System.out.print("Input User ID: ");
-        int userID = in.nextInt();
-        System.out.print("Input Password: ");
-        String password = in.next();
+      
 
-        for(Employee employee: listOfEmployees){
-            if(employee.getEmployeeID() == userID){
-                System.out.println("asdasd1");
+            System.out.println("============ Register ============");
+            System.out.print("Input User ID: ");
+            int userID = in.nextInt();
+            System.out.print("Input Password: ");
+            String userPass = in.next();
+    
+            for(Employee employee: listOfEmployees){
+                if(employee.getEmployeeID() == userID && employee.getEmployeePassword().equals(userPass)){
+                    System.out.println("asdasd1");
+                }
+                else{
+                    System.out.println("invalid1");
+    
+                }
             }
-            else{
-                System.out.println("invalid1");
-
-            }
-        }
-
     }
 
 

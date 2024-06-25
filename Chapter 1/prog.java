@@ -1,18 +1,41 @@
+public class prog{
+ static interface Nocturnal { 
+	 default boolean isBlind() 
+	 {
+		 return true; } 
+	 } 
+	 public class Owl implements Nocturnal 
+	 {   
+	 public boolean isBlind() 
+	 {
+		 return false; 
+		} 
+	 public static void main(String[] args) {
+	 
+	 Nocturnal nocturnal = (Nocturnal)new Owl(); 
+	 System.out.println(nocturnal.isBlind()); 
+	 } 
+		 } 
+			
 
-
-public class prog {
-	int x = 5;
-    public static void main(String args[]) {
-        prog progObject = new prog();
-		
-		System.out.println(progObject.addTwoNumber(5, progObject.x));
-
-    }
-
-	int addTwoNumber(int a, int b){
-		return a+b;
-	}
 }
+
+
+
+
+// public class prog {
+// 	int x = 5;
+//     public static void main(String args[]) {
+//         prog progObject = new prog();
+		
+// 		System.out.println(progObject.addTwoNumber(5, progObject.x));
+
+//     }
+
+// 	int addTwoNumber(int a, int b){
+// 		return a+b;
+// 	}
+// }
 
 // public static class Certification{
 // private String name;

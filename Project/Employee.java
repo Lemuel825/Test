@@ -2,44 +2,60 @@ package Project;
 
 public class Employee {
    private int EmployeeID;
-   private String Name;
-   private String Password;
+   private String EmployeeName;
+   private String EmployeePassword;
 
-    public Employee(int employeeID, String name, String password) {
+
+
+    public Employee(int employeeID, String employeeName, String employeePassword) {
     EmployeeID = employeeID;
-    Name = name;
-    Password = password;
+    EmployeeName = employeeName;
+    EmployeePassword = employeePassword;
 }
 
+
+
     public int getEmployeeID() {
-        return EmployeeID;
-    }
+    return EmployeeID;
+}
 
-    public void setEmployeeID(int EmployeeID) {
-        this.EmployeeID = EmployeeID;
-    }
 
-    public String getName() {
-        return Name;
-    }
 
-    public void setName(String Name) {
-        this.Name = Name;
-    }
+public void setEmployeeID(int employeeID) {
+    EmployeeID = employeeID;
+}
 
-    public String getPassword() {
-        return Password;
-    }
-    
-    public void setPassword(String password) {
-        Password = password;
-    }
+
+
+public String getEmployeeName() {
+    return EmployeeName;
+}
+
+
+
+public void setEmployeeName(String employeeName) {
+    EmployeeName = employeeName;
+}
+
+
+
+public String getEmployeePassword() {
+    return EmployeePassword;
+}
+
+
+
+public void setEmployeePassword(String employeePassword) {
+    EmployeePassword = employeePassword;
+}
+
+
 
     public void AddEmployee(Employee employee)
     {
         this.EmployeeID = employee.EmployeeID;
-        this.Name = employee.Name;
-        this.Password = employee.Password;
+        this.EmployeeName = employee.EmployeeName;
+        this.EmployeePassword = employee.EmployeePassword;
     }
 
 
